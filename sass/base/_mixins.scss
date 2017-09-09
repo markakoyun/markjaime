@@ -1,0 +1,7 @@
+@mixin fontTitle ($fontfamily , $fontsize, $fontweight, $fontcolor , $paddbottom){
+    font-family: $fontfamily;
+    font-size : $fontsize;
+    font-weight: $fontweight;
+    color: $fontcolor;
+    padding-bottom: $paddbottom;
+}

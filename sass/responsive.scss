@@ -1,0 +1,65 @@
+@media only screen and (max-width: 382px) {
+    #nav {
+        display: none;
+    }
+    .menu {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #about .aboutMe {
+        .leftCont {
+            float: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-right: 0;
+            img {
+                max-width: 70%;
+            }
+        }
+        .rightCont {
+            float: none;
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+        }
+        .aboutDetails {
+            padding: 50px 0 50px 20px;
+        }
+    }
+    #portfolio {
+        .portfolioBox4 {
+            padding-top: 30px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    #contact {
+        text-align: center;
+    }
+    .skillCont {
+        margin-bottom: 20px;
+    }
+    #about,
+    #skill,
+    #portfolio,
+    #contact {
+        padding: 60px 10px;
+    }
+    #nav {
+        padding: 30px 10px;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    #about .aboutMe {
+        .rightCont {
+            float: left;
+            width: 67%;
+            margin-top: 20px;
+        }
+    }
+}

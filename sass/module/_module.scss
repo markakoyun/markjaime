@@ -1,0 +1,21 @@
+.button {
+    color: $white-color;
+    font-family: $ralewayFont;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid $white-color;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.progress {
+    background-color: #414042;
+    height: 10px;
+    .progress-bar {
+        background-color: $white-color;
+    }
+}

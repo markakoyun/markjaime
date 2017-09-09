@@ -1,0 +1,117 @@
+#nav {
+    background-color: $primary-color;
+    padding: 30px 0;
+    width: 100%;
+    .container {
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+}
+
+nav {
+    float: left;
+    ul li {
+        display: inline;
+        padding-right: 30px;
+    }
+    ul li a {
+        color: $white-color;
+        font-family: $ralewayFont;
+        font-weight: 600;
+        &:hover {
+            color: $white-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.menu {
+    z-index: 999;
+    position: fixed;
+    top: 5%;
+    left: 80%;
+    visibility: hidden;
+    float: right;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    .burger,
+    .burger::before,
+    .burger::after {
+        background-color: $white-color;
+        width: 25px;
+        height: 3px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    .burger::before,
+    .burger::after {
+        content: " ";
+        display: block;
+    }
+    .burger::after {
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+    .burger::before {
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px);
+    }
+}
+
+.open .burger {
+    -webkit-transform: translateY(5px)rotate(45deg);
+    transform: translateY(5px)rotate(45deg);
+}
+
+.open .burger::before {
+    opacity: 0;
+}
+
+.open .burger::after {
+    -webkit-transform: translateY(-3px) rotate(90deg);
+    transform: translateY(-3px) rotate(90deg);
+}
+
+.mobileNav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    position: fixed;
+    z-index: 9;
+    transition: all 0.5s ease-in;
+    top: 0;
+    left: 100%;
+    nav ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    nav ul li a,
+    nav ul li {
+        list-style: none;
+        line-height: 3rem;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-family: $ralewayFont;
+        color: #fff;
+        transition: all 0.3s ease-in;
+        text-transform: lowercase;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+}
+
+.nav-hide {
+    left: 0;
+}

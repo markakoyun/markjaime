@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: $secondary-color;
+}
+
+.bodynoscroll {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    @include fontTitle ($ralewayFont, 45px, 700, $title-color, 50px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $latoFont;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
