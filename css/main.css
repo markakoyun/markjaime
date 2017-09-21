@@ -450,7 +450,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transition: .8s linear;
+  transition: 1s cubic-bezier(1, -0.12, 0, 1.01);
 }
 /* line 167, ../sass/layout/_section.scss */
 .hoverPort:hover {
