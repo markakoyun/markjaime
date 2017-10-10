@@ -406,109 +406,93 @@ nav ul li a:hover {
 
 /* line 124, ../sass/layout/_section.scss */
 #portfolio {
-  background-color: #f8f9fb;
+  background-color: #26272f;
   padding: 80px 0;
 }
 /* line 127, ../sass/layout/_section.scss */
-#portfolio .portfolioBox1 {
-  background: url("../img/lokalride.jpg") no-repeat top center scroll;
-  background-size: cover;
-  height: 500px;
-  margin-bottom: 20px;
-  position: relative;
-  overflow: hidden;
+#portfolio h2 {
+  color: white;
 }
-/* line 135, ../sass/layout/_section.scss */
-#portfolio .portfolioBox2, #portfolio .portfolioBox3, #portfolio .portfolioBox4 {
-  background-color: #e7394e;
-  padding: 30px 10px 0 10px;
-  text-align: center;
+/* line 130, ../sass/layout/_section.scss */
+#portfolio .portfolioBox1, #portfolio .portfolioBox2, #portfolio .portfolioBox3, #portfolio .portfolioBox4 {
+  background: url("../img/montreal.jpg") no-repeat top center scroll;
+  background-size: cover;
+  height: 350px;
   margin-bottom: 20px;
+  transition: transform 1s ease-in;
+}
+/* line 136, ../sass/layout/_section.scss */
+#portfolio .portfolioBox1:hover, #portfolio .portfolioBox2:hover, #portfolio .portfolioBox3:hover, #portfolio .portfolioBox4:hover {
+  transform: scale(1.1);
+}
+/* line 140, ../sass/layout/_section.scss */
+#portfolio .portfolioBox2, #portfolio .portfolioBox3, #portfolio .portfolioBox4 {
+  background: url("../img/port1.jpg") no-repeat top center scroll;
   position: relative;
-  overflow: hidden;
-  height: 100%;
 }
 /* line 144, ../sass/layout/_section.scss */
-#portfolio .portfolioBox3 {
-  background-color: #fcb314;
+#portfolio .portfolioBox2:hover, #portfolio .portfolioBox3:hover, #portfolio .portfolioBox4:hover {
+  transform: scale(1.1);
 }
 /* line 148, ../sass/layout/_section.scss */
-#portfolio .portfolioBox4 {
-  background-color: #33bc48;
-  padding-top: 100px;
+#portfolio .portfolioBox3 {
+  background: url("../img/port4.jpg") no-repeat top center scroll;
 }
-
+/* line 151, ../sass/layout/_section.scss */
+#portfolio .portfolioBox3:hover {
+  transform: scale(1.1);
+}
 /* line 155, ../sass/layout/_section.scss */
-.hoverPort {
-  position: absolute;
-  background-color: rgba(14, 130, 249, 0.9);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  transition: 1s cubic-bezier(1, -0.12, 0, 1.01);
+#portfolio .portfolioBox4 {
+  background: url("../img/port3.jpg") no-repeat top center scroll;
 }
-/* line 167, ../sass/layout/_section.scss */
-.hoverPort:hover {
-  left: 100%;
-  background-color: rgba(14, 130, 249, 0);
-}
-/* line 171, ../sass/layout/_section.scss */
-.hoverPort h4 {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-/* line 179, ../sass/layout/_section.scss */
-.hoverPort p {
-  color: white;
-  font-weight: 500;
+/* line 158, ../sass/layout/_section.scss */
+#portfolio .portfolioBox4:hover {
+  transform: scale(1.1);
 }
 
-/* line 185, ../sass/layout/_section.scss */
+/* line 164, ../sass/layout/_section.scss */
+.overFlow {
+  overflow: hidden;
+}
+
+/* line 168, ../sass/layout/_section.scss */
 .colorPort1 {
   background-color: rgba(231, 57, 78, 0.9);
 }
 
-/* line 189, ../sass/layout/_section.scss */
+/* line 172, ../sass/layout/_section.scss */
 .colorPort2 {
   background-color: rgba(252, 179, 20, 0.9);
 }
 
-/* line 193, ../sass/layout/_section.scss */
+/* line 176, ../sass/layout/_section.scss */
 .colorPort3 {
   background-color: rgba(51, 188, 72, 0.9);
 }
 
-/* line 197, ../sass/layout/_section.scss */
+/* line 180, ../sass/layout/_section.scss */
 #contact {
   background-color: white;
   padding: 100px 20px;
 }
-/* line 200, ../sass/layout/_section.scss */
+/* line 183, ../sass/layout/_section.scss */
 #contact h4 {
   font-family: Raleway, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-/* line 206, ../sass/layout/_section.scss */
+/* line 189, ../sass/layout/_section.scss */
 #contact p {
   font-size: 18px;
   line-height: 2.5em;
 }
-/* line 210, ../sass/layout/_section.scss */
+/* line 193, ../sass/layout/_section.scss */
 #contact a {
   color: inherit;
 }
-/* line 213, ../sass/layout/_section.scss */
+/* line 196, ../sass/layout/_section.scss */
 #contact .fa {
   font-size: 20px;
   padding-right: 20px;

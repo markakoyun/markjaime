@@ -29,6 +29,13 @@ $(document).ready(function () {
         }
     });
 
+
+    $('.hoverPort').on('click', function () {
+        $(this).toggleClass('hover');
+    });
+
+
+
     /* smooth scroll */
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
